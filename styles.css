@@ -112,6 +112,7 @@ body {
     font-weight: 700;
     font-size: 1.5rem;
     color: var(--primary-color);
+    gap: 0.5rem;
 }
 
 .logo-text {
@@ -277,6 +278,10 @@ body {
     margin-bottom: var(--spacing-md);
 }
 
+.hero-about {
+    background: linear-gradient(135deg, var(--background-light) 0%, var(--background-dark) 100%);
+}
+
 .hero-buttons {
     display: flex;
     gap: var(--spacing-sm);
@@ -288,6 +293,12 @@ body {
     height: auto;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-lg);
+}
+
+.hero-logo {
+    max-width: 420px;
+    margin: 0 auto;
+    display: block;
 }
 
 /* Features Section */
@@ -401,12 +412,41 @@ body {
 
 .testimonial-card footer {
     margin-top: var(--spacing-sm);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    margin-bottom: 0;
+    color: var(--text-primary) !important;
+}
+
+.testimonial-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--border-color);
+    flex-shrink: 0;
+}
+
+.testimonial-author-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
 }
 
 .testimonial-card cite {
     font-style: normal;
     font-weight: 600;
     color: var(--text-primary);
+    display: block;
+}
+
+.testimonial-years {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
 }
 
 /* Footer */
@@ -572,6 +612,81 @@ a:focus {
     margin-bottom: var(--spacing-xs);
 }
 
+/* Copyright Page */
+.copyright-item {
+    margin-bottom: var(--spacing-lg);
+    padding: var(--spacing-md);
+    background-color: var(--background-light);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+}
+
+.copyright-item h3 {
+    margin-top: 0;
+    margin-bottom: var(--spacing-sm);
+    color: var(--primary-color);
+}
+
+.copyright-details {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: var(--spacing-xs) var(--spacing-sm);
+    margin: 0;
+}
+
+.copyright-details dt {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.copyright-details dd {
+    margin: 0;
+    color: var(--text-secondary);
+}
+
+/* Contact Page */
+.contact-page .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+}
+
+@media (min-width: 900px) {
+    .contact-page .contact-grid {
+        grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.2fr);
+        align-items: flex-start;
+    }
+}
+
+.contact-details {
+    background-color: var(--background-light);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+}
+
+.contact-map-placeholder {
+    margin-top: var(--spacing-md);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    border: 2px dashed var(--border-color);
+    text-align: center;
+    color: var(--text-secondary);
+    background-color: var(--background);
+}
+
+.contact-form-section {
+    background-color: var(--background);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
+}
+
+.contact-form-section form > p {
+    margin-bottom: var(--spacing-md);
+}
+
 /* Products Page */
 .products-grid {
     display: grid;
@@ -661,6 +776,101 @@ a:focus {
 .mb-1 { margin-bottom: var(--spacing-sm); }
 .mb-2 { margin-bottom: var(--spacing-md); }
 .mb-3 { margin-bottom: var(--spacing-lg); }
+
+/* About Page */
+.about-section {
+    padding: var(--spacing-xl) 0;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+}
+
+@media (min-width: 900px) {
+    .about-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.about-card {
+    background: var(--background);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+    padding: var(--spacing-md);
+    box-shadow: var(--shadow-sm);
+}
+
+.brands-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+}
+
+@media (min-width: 900px) {
+    .brands-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.brand-card {
+    background: var(--background);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+    padding: var(--spacing-md);
+    box-shadow: var(--shadow-sm);
+}
+
+.brand-meta {
+    margin-top: var(--spacing-sm);
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+.brand-figure {
+    margin: 0 0 var(--spacing-sm);
+    text-align: center;
+}
+
+.brand-logo {
+    max-width: 240px;
+    width: 100%;
+    height: auto;
+}
+
+.brand-wordmark {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.brand-logo-small {
+    max-width: 120px;
+}
+
+.brand-figure figcaption {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-top: var(--spacing-xs);
+}
+
+.brand-legal {
+    margin-top: var(--spacing-lg);
+}
+
+.brand-legal ul {
+    margin-left: 1.25rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.brand-note {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
 
 /* Pricing/Products Page Styles */
 .products-hero {
