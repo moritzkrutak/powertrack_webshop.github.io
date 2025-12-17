@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kontakt zu PowerTrack GmbH in Wien – Fragen zur Fitness Tracker App fürs Krafttraining.">
+    <title>Kontakt – PowerTrack GmbH</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar" role="navigation" aria-label="Hauptnavigation">
+            <div class="container">
+                <a href="index.html" class="logo" aria-label="PowerTrack Startseite">
+                    <img src="assets/PowerTrack_Icon.png" alt="PowerTrack Logo" class="logo-img">
+                    <span class="logo-text">PowerTrack</span>
+                </a>
+                <button class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="about.html">Über uns</a></li>
+                    <li><a href="products.html">Produkte</a></li>
+                    <li><a href="contact.html" aria-current="page">Kontakt</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="page-header" aria-labelledby="contact-heading">
+            <div class="container">
+                <h1 id="contact-heading">Kontakt</h1>
+                <p>Sie haben Fragen zu PowerTrack, zu den Paketen oder rechtlichen Themen? Kontaktieren Sie uns gerne.</p>
+            </div>
+        </section>
+
+        <section class="page-content contact-page" aria-label="Kontaktbereich">
+            <div class="container contact-grid">
+                <section class="contact-details" aria-labelledby="company-contact-heading">
+                    <h2 id="company-contact-heading">PowerTrack GmbH</h2>
+                    <p><strong>Adresse</strong></p>
+                    <p>
+                        PowerTrack GmbH<br>
+                        Beispielgasse 12/3<br>
+                        1010 Wien<br>
+                        Österreich
+                    </p>
+
+                    <p><strong>Kontakt</strong></p>
+                    <p>
+                        Telefon: <a href="tel:+43123456789">+43 1 234 56 789</a><br>
+                        E-Mail: <a href="mailto:kontakt@powertrack.at">kontakt@powertrack.at</a><br>
+                        Web: <a href="index.html">www.powertrack.at (Demo)</a>
+                    </p>
+
+                    <p><strong>Geschäftsführung</strong><br>
+                        Max Mustermann, Geschäftsführer
+                    </p>
+
+                    <p><strong>Firmenbuch</strong><br>
+                        Firmenbuchnummer: FN 123456a<br>
+                        Firmenbuchgericht: Handelsgericht Wien
+                    </p>
+
+                    <p><strong>Umsatzsteuer-Identifikationsnummer</strong><br>
+                        ATU12345678 (fiktiv)
+                    </p>
+
+                    <div class="contact-map-placeholder" role="img" aria-label="Platzhalter für Karte mit Standort Wien">
+                        <p>Kartenansicht (Demo)</p>
+                        <p>Standort: Wien, Österreich</p>
+                    </div>
+                </section>
+
+                <section class="contact-form-section" aria-labelledby="contact-form-heading">
+                    <h2 id="contact-form-heading">Kontaktformular</h2>
+                    <p>Füllen Sie das Formular aus, um uns eine Nachricht zu senden. Der Versand ist in dieser Demo-Version nur simuliert.</p>
+
+                    <form aria-describedby="contact-form-hint">
+                        <p id="contact-form-hint">
+                            Mit * gekennzeichnete Felder sind Pflichtfelder. Der Versand des Formulars wird in dieser Demo-Version
+                            nur simuliert, es werden keine echten E-Mails versendet.
+                        </p>
+
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required autocomplete="name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-Mail-Adresse *</label>
+                            <input type="email" id="email" name="email" required autocomplete="email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Betreff *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="reason">Grund Ihrer Anfrage *</label>
+                            <select id="reason" name="reason" required>
+                                <option value="">Bitte wählen</option>
+                                <option value="product">Fragen zu Paketen / Produkt</option>
+                                <option value="license">Fragen zu Lizenz / Nutzungsrechten</option>
+                                <option value="privacy">Fragen zum Datenschutz</option>
+                                <option value="support">Technischer Support</option>
+                                <option value="other">Sonstiges</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Ihre Nachricht *</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" name="privacy-consent" required>
+                                Ich habe die <a href="privacy.html">Datenschutzerklärung</a> gelesen und bin mit der
+                                Verarbeitung meiner Daten im Rahmen dieser Demo einverstanden.
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Nachricht senden (Demo)</button>
+                    </form>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PowerTrack</h3>
+                    <p>Die Fitness Tracker App speziell fürs Krafttraining.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Rechtliches</h4>
+                    <ul>
+                        <li><a href="impressum.html">Impressum</a></li>
+                        <li><a href="privacy.html">Datenschutz</a></li>
+                        <li><a href="license.html">Lizenz</a></li>
+                        <li><a href="copyright.html">Urheberrecht</a></li>
+                        <li><a href="accessibility.html">Barrierefreiheit</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Unternehmen</h4>
+                    <ul>
+                        <li><a href="about.html">Über uns</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PowerTrack. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
