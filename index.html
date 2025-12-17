@@ -1,1 +1,162 @@
-Test
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PowerTrack - Die Fitness Tracker App speziell fürs Krafttraining. Dokumentieren Sie Ihre Übungen mit Bildern, Gewicht, Sätzen und Wiederholungen.">
+    <title>PowerTrack - Fitness Tracker für Krafttraining</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar" role="navigation" aria-label="Hauptnavigation">
+            <div class="container">
+                <a href="index.html" class="logo" aria-label="PowerTrack Startseite">
+                    <span class="logo-text">PowerTrack</span>
+                </a>
+                <button class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html" aria-current="page">Startseite</a></li>
+                    <li><a href="about.html">Über uns</a></li>
+                    <li><a href="products.html">Produkte</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" aria-labelledby="hero-heading">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 id="hero-heading">Dein Krafttraining im Griff</h1>
+                    <p class="hero-subtitle">PowerTrack ist die Fitness Tracker App speziell fürs Krafttraining. Dokumentiere deine Übungen mit Bildern, Gewicht, Sätzen und Wiederholungen – und verfolge deinen Fortschritt.</p>
+                    <div class="hero-buttons">
+                        <a href="products.html" class="btn btn-primary">Pakete ansehen</a>
+                        <a href="about.html" class="btn btn-secondary">Mehr erfahren</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-placeholder" aria-hidden="true">
+                        <svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="400" rx="20" fill="#f1f5f9"/>
+                            <rect x="50" y="50" width="300" height="300" rx="15" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+                            <circle cx="200" cy="150" r="40" fill="#2563eb" opacity="0.2"/>
+                            <rect x="160" y="200" width="80" height="100" rx="5" fill="#2563eb" opacity="0.3"/>
+                            <text x="200" y="330" text-anchor="middle" font-family="Inter" font-size="18" fill="#64748b">PowerTrack App</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features" aria-labelledby="features-heading">
+            <div class="container">
+                <h2 id="features-heading">Warum PowerTrack?</h2>
+                <div class="features-grid">
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Übungen dokumentieren</h3>
+                        <p>Erfasse jede Übung mit Bildern, Gewicht, Sätzen und Wiederholungen für vollständige Trainingsdokumentation.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 3V21H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7 16L12 11L16 15L21 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 10V3H14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Fortschritt visualisieren</h3>
+                        <p>Mit PowerTrack Gold siehst du statistische Grafiken deiner Einträge und verfolgst deinen Trainingsfortschritt.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 11L12 14L22 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 12V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Einfache Bedienung</h3>
+                        <p>Intuitive Benutzeroberfläche speziell für Krafttraining – schnell erfasst, einfach verwaltet.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM13 17H11V15H13V17ZM13 13H11V7H13V13Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3>Für Krafttraining optimiert</h3>
+                        <p>Speziell entwickelt für Kraftsportler – alle wichtigen Daten auf einen Blick.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials" aria-labelledby="testimonials-heading">
+            <div class="container">
+                <h2 id="testimonials-heading">Was unsere Nutzer sagen</h2>
+                <div class="testimonials-grid">
+                    <blockquote class="testimonial-card">
+                        <p>"PowerTrack hat mein Training revolutioniert. Endlich kann ich alle meine Übungen systematisch dokumentieren und sehe meinen Fortschritt klar vor mir."</p>
+                        <footer>
+                            <cite>Max Müller, Kraftsportler</cite>
+                        </footer>
+                    </blockquote>
+                    <blockquote class="testimonial-card">
+                        <p>"Die statistischen Grafiken in PowerTrack Gold sind genial. Ich kann genau sehen, wie sich meine Leistung über die Zeit verbessert hat."</p>
+                        <footer>
+                            <cite>Sarah Klein, Fitness-Enthusiastin</cite>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PowerTrack</h3>
+                    <p>Die Fitness Tracker App speziell fürs Krafttraining.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Rechtliches</h4>
+                    <ul>
+                        <li><a href="impressum.html">Impressum</a></li>
+                        <li><a href="privacy.html">Datenschutz</a></li>
+                        <li><a href="license.html">Lizenz</a></li>
+                        <li><a href="accessibility.html">Barrierefreiheit</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Unternehmen</h4>
+                    <ul>
+                        <li><a href="about.html">Über uns</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PowerTrack. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
